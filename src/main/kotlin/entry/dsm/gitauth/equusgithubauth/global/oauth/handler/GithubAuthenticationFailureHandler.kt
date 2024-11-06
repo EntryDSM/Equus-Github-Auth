@@ -11,6 +11,6 @@ class GithubAuthenticationFailureHandler : AuthenticationFailureHandler {
         response: HttpServletResponse?,
         exception: AuthenticationException?
     ) {
-        response?.sendRedirect("/api/login")
+        response?.sendRedirect("/api/github/auth/not/authenticated")
     }
 }

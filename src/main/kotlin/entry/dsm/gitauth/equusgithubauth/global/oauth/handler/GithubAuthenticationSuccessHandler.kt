@@ -11,6 +11,6 @@ class GithubAuthenticationSuccessHandler : AuthenticationSuccessHandler {
         response: HttpServletResponse?,
         authentication: Authentication?
     ) {
-        response?.sendRedirect("/api/")
+        response?.sendRedirect("/api/github/auth/authenticated/")
     }
 }
